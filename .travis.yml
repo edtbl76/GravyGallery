@@ -20,10 +20,10 @@ before_script:
 addons:
   chrome: stable
   firefox: latestgi
-#  sonarcloud:
-#    organization: "edtbl76"
-#    token:
-#      secure: ""
+  sonarcloud:
+    organization: "edtbl76"
+    token:
+      secure: ${SONAR_TOKEN}
 jobs:
   include:
 #    - stage: Gradle
