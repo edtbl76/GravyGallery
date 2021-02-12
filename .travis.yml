@@ -20,13 +20,15 @@ before_script:
 addons:
   chrome: stable
   firefox: latest
-  sonarcloud:
-    organization: "edtbl76"
-    token:
-      secure: ""
+#  sonarcloud:
+#    organization: "edtbl76"
+#    token:
+#      secure: ""
 jobs:
   include:
-    - stage: Gradle
-      script: ./gradlew test
+#    - stage: Gradle
+#      script: ./gradlew test
+#    - stage: Maven
+#      script: mvn test sonar:sonar && bash <(curl -s https://codecov.io/bash)
     - stage: Maven
-      script: mvn test sonar:sonar && bash <(curl -s https://codecov.io/bash)
+        script: mvn test && bash <(curl -s https://codecov.io/bash)
