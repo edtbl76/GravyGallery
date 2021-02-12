@@ -31,4 +31,4 @@ jobs:
 #    - stage: Maven
 #      script: mvn test sonar:sonar && bash <(curl -s https://codecov.io/bash)
     - stage: Maven
-        script: mvn test && bash <(curl -s https://codecov.io/bash)
+      script: mvn test && bash <(curl -s https://codecov.io/bash)
