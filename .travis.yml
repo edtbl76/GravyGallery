@@ -1,0 +1,32 @@
+language: java
+
+os: linux
+
+dist: xenial
+
+install: true
+
+jdk: openjdk11
+
+services:
+  - xvfb
+
+git:
+  depth: false
+
+before_script:
+  - export DISPLAY=:99.0
+
+addons:
+  chrome: stable
+  firefox: latest
+  sonarcloud:
+    organization: "edtbl76"
+    token:
+      secure: ""
+jobs:
+  include:
+    - stage: Gradle
+      script: ./gradlew test
+    - stage: Maven
+      script: mvn test sonar:sonar && bash <(curl -s https://codecov.io/bash)

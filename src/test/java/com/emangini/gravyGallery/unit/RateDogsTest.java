@@ -35,7 +35,7 @@ public class RateDogsTest {
     // Test Data
     Dog dummy = new Dog("dummy", "dummyDog.jpg");
     int stars = 5;
-    String comment = "foo";
+    String comment = "I'm a dummy";
 
     @ParameterizedTest(name = "Rating dog with {0} stars")
     @ValueSource(doubles = {0.5, 5})
@@ -50,7 +50,7 @@ public class RateDogsTest {
     void testRatingWithComments() {
         when(dogRepository.findById(any(Long.class)))
                 .thenReturn(Optional.of(dummy));
-        Dog dummyDog = dogService.rateDog(stars, dummy);
+        Dog dummyDog = dogService.rateDog(stars, comment, 0 );
         assertThat(dogService.getOpinions(dummyDog).iterator().next().getComment(), equalTo(comment));
     }
 

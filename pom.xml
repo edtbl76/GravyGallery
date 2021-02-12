@@ -20,6 +20,9 @@
         <spring.boot.version>2.4.2</spring.boot.version>
 
 
+        <sonar.projectKey>edtbl76_GravyGallery</sonar.projectKey>
+        <sonar.organization>edtbl76</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>

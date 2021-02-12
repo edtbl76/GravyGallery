@@ -7,7 +7,7 @@
     <title>Gravy Gallery</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cdnjs.cloudflare.com/>ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<!--    <link rel="stylesheet" href="cdnjs.cloudflare.com/>ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">-->
     <link rel="stylesheet" href="./css/gallery-grid.css">
     <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="./css/star-rating.css">
@@ -52,7 +52,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title"><span th:text="${dog.name}"></span> <img th:src="@{${'./img/stars-' + dog.getHalfRoundedAverageRate() + '.png'}}" th:title="|Averge rate of ${dog.name}: ${dog.getAverageRateAsString()}|"></h2>
+                    <h2 class="modal-title"><span th:text="${dog.name}"></span> <img th:src="@{${'./img/stars-' + dog.getHalfRoundedAverageRate() + '.png'}}" th:title="|Average rate of ${dog.name}: ${dog.getAverageRateAsString()}|"></h2>
                 </div>
                 <div class="modal-body"> <img class="img-responsive img-thumbnail" th:src="@{${'./img/' + dog.pictureFileName}}" th:alt="${dog.name}" th:title="${dog.name}">
                     <form th:id="|form${dog.id}|" role="form" class="form-inline" th:action="@{/}" method="post" th:with="inCookies=${dog.inCookies}">

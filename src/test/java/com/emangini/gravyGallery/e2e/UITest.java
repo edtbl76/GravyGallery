@@ -46,20 +46,21 @@ public class UITest {
     @DisplayName("Rate a dog using GUI")
     void testRateDog(FirefoxDriver firefoxDriver) {
        firefoxDriver.get("http://localhost:" + serverPort);
-        firefoxDriver.findElement(By.id("UpsideDown")).click();
+        firefoxDriver.findElement(By.id("LazyCouch")).click();
 
-        String fourStarsSelector = "#form1 span:nth-child(4)";
-        new WebDriverWait(firefoxDriver, 10)
+        String fourStarsSelector = "#form1 span:nth-child(3)";
+        new WebDriverWait(firefoxDriver, 15)
                 .until(elementToBeClickable(By.cssSelector(fourStarsSelector)));
         firefoxDriver.findElement(By.cssSelector(fourStarsSelector)).click();
 
+
         firefoxDriver.findElement(By.xpath("//*[@id=\"comment\"]"))
                 .sendKeys("Wonderful Puppy");
-        firefoxDriver.findElement(By.cssSelector("#form1 > button")).click();
+        firefoxDriver.findElement(By.cssSelector("#form1> button")).click();
 
         WebElement successDiv = firefoxDriver
-                .findElement(By.cssSelector("success > div"));
-        assertThat(successDiv.getText(), containsString("Your vote for UpsideDown"));
+                .findElement(By.cssSelector("#success > div"));
+        assertThat(successDiv.getText(), containsString("Your rating for LazyCouch"));
     }
 
     @Test
@@ -67,7 +68,7 @@ public class UITest {
     void testRateDogWithError(
             @Arguments("--headless") ChromeDriver chromeDriver) {
         chromeDriver.get("http://localhost:" + serverPort);
-        chromeDriver.findElement(By.id("UpsideDown")).click();
+        chromeDriver.findElement(By.id("LazyCouch")).click();
 
         String sendButtonSelector = "#form1 > button";
         new WebDriverWait(chromeDriver, 10)
