@@ -1,4 +1,4 @@
-package com.emangini.gravyGallery;
+package com.emangini;
 
 public class DogException extends RuntimeException{
 

@@ -1,4 +1,4 @@
-package com.emangini.gravyGallery;
+package com.emangini;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Locale;
 
-import static com.emangini.gravyGallery.CookiesService.COOKIE_NAME;
+import static com.emangini.CookiesService.COOKIE_NAME;
 
 @Slf4j
 @Controller

@@ -19,7 +19,7 @@ before_script:
 
 addons:
   chrome: stable
-  firefox: latestgi
+  firefox: latest
   sonarcloud:
     organization: "edtbl76"
     token:

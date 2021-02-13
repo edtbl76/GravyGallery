@@ -1,4 +1,4 @@
-package com.emangini.gravyGallery;
+package com.emangini;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

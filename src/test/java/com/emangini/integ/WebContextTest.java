@@ -1,4 +1,4 @@
-package com.emangini.gravyGallery.integ;
+package com.emangini.integ;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;

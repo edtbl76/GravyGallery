@@ -1,8 +1,8 @@
-package com.emangini.gravyGallery.unit;
+package com.emangini.unit;
 
-import com.emangini.gravyGallery.CookiesService;
-import com.emangini.gravyGallery.Dog;
-import com.emangini.gravyGallery.Opinion;
+import com.emangini.Opinion;
+import com.emangini.CookiesService;
+import com.emangini.Dog;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;

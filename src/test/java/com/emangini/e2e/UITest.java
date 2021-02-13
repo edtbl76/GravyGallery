@@ -1,4 +1,4 @@
-package com.emangini.gravyGallery.e2e;
+package com.emangini.e2e;
 
 import io.github.bonigarcia.seljup.Arguments;
 import io.github.bonigarcia.seljup.SeleniumJupiter;
