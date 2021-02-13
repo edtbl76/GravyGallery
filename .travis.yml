@@ -22,8 +22,7 @@ addons:
   firefox: latest
   sonarcloud:
     organization: "edtbl76"
-    token:
-      secure: ${SONAR_TOKEN}
+    token: ${SONAR_TOKEN}
 jobs:
   include:
     - stage: Maven
