@@ -23,7 +23,7 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Unit:BlackBox: Rating Dogs")
-public class RateDogsTest {
+class RateDogsTest {
 
     @InjectMocks
     DogService dogService;

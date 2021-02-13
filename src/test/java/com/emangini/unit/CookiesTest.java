@@ -25,7 +25,7 @@ import static org.mockito.Mockito.doNothing;
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Unit:WhiteBox: Handling Cookies")
 @Tag("unit")
-public class CookiesTest {
+class CookiesTest {
 
     @InjectMocks
     CookiesService cookiesService;

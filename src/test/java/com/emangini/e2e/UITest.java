@@ -27,7 +27,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 @SpringBootTest(webEnvironment = RANDOM_PORT)
 @DisplayName("E2E:UI")
 @Tag("e2e")
-public class UITest {
+class UITest {
 
     @LocalServerPort
     int serverPort;

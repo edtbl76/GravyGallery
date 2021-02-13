@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @DisplayName("Integ: HTTP Responses")
 @Tag("integration")
-public class WebContextTest {
+class WebContextTest {
 
     @Autowired
     MockMvc mockMvc;
