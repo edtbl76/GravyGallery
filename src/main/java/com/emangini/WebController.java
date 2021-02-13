@@ -29,7 +29,7 @@ public class WebController {
     @GetMapping("/")
     public ModelAndView index(
             @CookieValue(value = COOKIE_NAME,defaultValue = "") String cookiesValue) {
-        log.trace("Cookies: {}", cookiesValue);
+        log.info("Cookies: {}", cookiesValue);
 
         ModelAndView model = new ModelAndView("index");
         List<Dog> allDogs = dogService.getAllDogs();
