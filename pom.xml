@@ -14,7 +14,7 @@
         <hamcrest.version>2.2</hamcrest.version>
         <jacoco.maven.version>0.8.6</jacoco.maven.version>
         <jupiter.version>5.7.0</jupiter.version>
-        <lombok.version>1.18.18</lombok.version>
+        <lombok.version>1.18.20</lombok.version>
         <mockito.jupiter.version>3.7.7</mockito.jupiter.version>
         <selenium.jupiter.version>3.4.0</selenium.jupiter.version>
         <spring.boot.version>2.4.2</spring.boot.version>
